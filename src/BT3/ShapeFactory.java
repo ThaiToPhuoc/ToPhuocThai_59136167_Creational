@@ -10,7 +10,7 @@ package BT3;
  * @author tophu
  */
 public class ShapeFactory{
-    private static ShapeFactory instance;
+    public static ShapeFactory instance;
     
     ShapeType Type ;
 
