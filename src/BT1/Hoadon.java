@@ -5,7 +5,6 @@
  */
 package BT1;
 import java.util.ArrayList;
-import java.util.Date;
 /**
  *
  * @author tophu
@@ -22,20 +21,20 @@ public class Hoadon {
     public String hienthiCTHD(){
         String ht = "";
         for(int i = 0; i < chitiet.size(); i++){
-            ht+= "\nTen san pham: " + chitiet.get(i).getTenSP()
-                +"\tSo luong: " + chitiet.get(i).getSoluong()
-                +"\tDon gia: " + chitiet.get(i).getDongia()
-                +"\tChiet khau: " + chitiet.get(i).getChietkhau();
+            ht+= "\nTên sản phẩm: " + chitiet.get(i).getTenSP()
+                +"\tSố lượng: " + chitiet.get(i).getSoluong()
+                +"\tĐơn giá: " + chitiet.get(i).getDongia()
+                +"\tChiết khấu: " + chitiet.get(i).getChietkhau();
             }
         return ht;
     }
 
     @Override
     public String toString() {
-        return "chi tiết hóa đơn: \n Mã Hóa đơn: " + header.getMaHD() +
+        return "chi tiết hóa đơn: \nMã Hóa đơn: " + header.getMaHD() +
                 "\nTên khách hàng: " + header.getTenKH() +
-                "\nNgay ban: " + header.getNgayban()
-                +"\nDanh sach san pham: " + hienthiCTHD();
+                "\nNgày bán: " + header.getNgayban()
+                +"\nDanh sách sản phẩm: " + hienthiCTHD();
     }
     
     public static class builder{
@@ -65,7 +64,7 @@ public class Hoadon {
         }*/
         
         public builder themsanpham(CTHD p){
-            chitiet.add(p);
+            this.chitiet.add(p);
             return this;
         }
                 
