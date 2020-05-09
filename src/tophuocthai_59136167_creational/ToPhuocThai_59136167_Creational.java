@@ -51,14 +51,26 @@ public class ToPhuocThai_59136167_Creational {
         ShapeFactory Hinh1 = ShapeFactory.Createinstance();
         ShapeFactory Hinh2 = ShapeFactory.Createinstance();
         ShapeFactory Hinh3 = ShapeFactory.Createinstance();
-        Shape H1 = Hinh1.createShape(ShapeType.Triangle);
-        System.out.println(H1.Draw()+"\n");
         
-        Shape H2 = Hinh2.createShape(ShapeType.Circle);
-        System.out.println(H2.Draw()+"\n");
+        Hinh1.setType(ShapeType.Triangle);
+        Shape H1 = Hinh1.createShape();
         
-        Shape H3 = Hinh2.createShape(ShapeType.Rectangle);
-        System.out.println(H3.Draw()+"\n");
+        System.out.println("\n" + H1.Draw());
+        
+        Hinh2.setType(ShapeType.Circle);
+        H1 = Hinh1.createShape();
+        Shape H2 = Hinh2.createShape();
+        
+        System.out.println("\n" + H1.Draw());
+        System.out.println(H2.Draw());
+        
+        Hinh3.setType(ShapeType.Rectangle);
+        H1 = Hinh1.createShape();
+        H2 = Hinh2.createShape();
+        Shape H3 = Hinh3.createShape();
+        System.out.println("\n" + H1.Draw());
+        System.out.println(H2.Draw());
+        System.out.println(H3.Draw());
     }
     
 }
