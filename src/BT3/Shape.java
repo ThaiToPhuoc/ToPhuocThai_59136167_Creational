@@ -11,15 +11,6 @@ package BT3;
  */
 public abstract class Shape {
     String Brush = "", Paper = "", Frame = "";
-    ShapeType Type;
-
-    public ShapeType getType() {
-        return Type;
-    }
-
-    public void setType(ShapeType Type) {
-        this.Type = Type;
-    }
     public abstract String Draw();
 
     @Override

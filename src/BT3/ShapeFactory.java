@@ -18,7 +18,7 @@ public class ShapeFactory {
         return instance;
     }
     
-     protected Shape createShape(ShapeType Type){
+     public Shape createShape(ShapeType Type){
          switch(Type){
             case Rectangle: return new Rectangle();
             case Triangle: return new Triangle();
